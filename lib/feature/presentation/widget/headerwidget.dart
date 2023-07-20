@@ -4,7 +4,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:host_group_chat/feature/presentation/widget/theme/style.dart';
+import 'package:host_group_chat/feature/presentation/widget/theme/colors.dart';
 
 class HeaderWidget extends StatelessWidget {
   final String title;

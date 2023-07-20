@@ -50,6 +50,7 @@ dependencies:
   fluttertoast: ^8.2.2
   firebase_auth:
   firebase_core:
+
   #message shape bubble
   bubble: ^1.2.1
 

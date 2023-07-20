@@ -3,13 +3,13 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:host_group_chat/feature/presentation/widget/theme/style.dart';
+import 'package:host_group_chat/feature/presentation/widget/theme/colors.dart';
 
 class TextContainerWidget extends StatelessWidget {
    final TextEditingController? controller;
   final IconData? prefixIcon;
   final TextInputType? keyboardType;
-  const TextContainerWidget({Key? key,this.keyboardType,  this.controller,this.prefixIcon}): super(key: key);
+  const TextContainerWidget({Key? key,this.keyboardType,  this.controller,this.prefixIcon, required suffixIcon}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
