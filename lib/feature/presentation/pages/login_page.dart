@@ -2,12 +2,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:host_group_chat/constant.dart';
+import 'package:host_group_chat/feature/presentation/pages/register_page.dart';
+import 'package:host_group_chat/feature/presentation/pages/register_page.dart';
+import 'package:host_group_chat/feature/presentation/pages/register_page.dart';
 import 'package:host_group_chat/feature/presentation/widget/textfield_container_widget.dart';
 import 'package:host_group_chat/feature/presentation/widget/headerwidget.dart';
 import 'package:host_group_chat/feature/presentation/widget/theme/colors.dart';
 
 import '../widget/Textfield_password_container_widget.dart';
 import '../widget/container_button_widget.dart';
+import '../widget/row_text_widget.dart';
 import 'forgot_password_page.dart';
 
 
@@ -61,7 +65,15 @@ class _LoginPageState extends State<LoginPage> {
               },),
 
               SizedBox(height:10),
-              _rowTextWidget(),
+
+              RowTextWidget(
+                title1: "Don't have an account?",
+                titile2: "Register",
+                onTap: () {
+                  Navigator.pushNamed(context, PageConst.registerPage);
+                  print("object");
+                },
+              ),
               SizedBox(height: 10,),
               _rowGoogleWidget(),
 

@@ -5,6 +5,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:host_group_chat/feature/presentation/pages/forgot_password_page.dart';
+import 'package:host_group_chat/feature/presentation/pages/register_page.dart';
 
 import 'constant.dart';
 import 'feature/presentation/pages/login_page.dart';
@@ -18,6 +19,16 @@ class OnGenerateRoute {
     case PageConst.forgotPasswordPage :{
     return materialBuilder(widget: ForgotPasswordPage());
     }
+
+      case PageConst.LoginPage :{
+        return materialBuilder(widget: LoginPage());
+      }
+
+      case PageConst.registerPage :{
+        return materialBuilder(widget: RegisterPage());
+      }
+
+
 
       case"/" :{
         return materialBuilder(widget: LoginPage());

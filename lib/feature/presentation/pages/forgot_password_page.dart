@@ -3,11 +3,25 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:host_group_chat/feature/presentation/pages/login_page.dart';
+import 'package:host_group_chat/feature/presentation/pages/login_page.dart';
+import 'package:host_group_chat/feature/presentation/pages/login_page.dart';
 import 'package:host_group_chat/feature/presentation/widget/headerwidget.dart';
 
 import '../../../constant.dart';
 import '../widget/container_button_widget.dart';
+import '../widget/row_text_widget.dart';
 import '../widget/textfield_container_widget.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
+import 'login_page.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   const ForgotPasswordPage({Key? key}) : super(key: key);
@@ -43,6 +57,14 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               ),
               SizedBox(height: 20,),
               ContainerButtonWidget(title:"Send Password Reset Email", tonTap: () {  },),
+              SizedBox(height: 20,),
+              RowTextWidget(
+                title1: "Remember the account information?",
+                titile2: "Register",
+                onTap: () {
+                  Navigator.restorablePushNamedAndRemoveUntil(context, PageConst.LoginPage, (route) => false);
+                },
+              ),
             ],
 
           ),
